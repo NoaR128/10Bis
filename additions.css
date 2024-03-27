@@ -1,0 +1,21 @@
+﻿* {
+    text-align: center;
+    font-family: David;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#text {
+    border: 1.5px solid #0C7D74;
+    color: #0C7D74;
+    margin: 50px;
+}
+
+p {
+    font-size: 20px;
+}
+
+.mapIMG {
+    width: 500px;
+    height: 300px;
+}

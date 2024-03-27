@@ -1,0 +1,8 @@
+﻿Build started...
+------ Build started: Project: JS, Configuration: Debug Any CPU ------
+Validating Web Site
+Building directory '/'.
+
+Validation Complete
+========== Build: 1 succeeded or up-to-date, 0 failed, 0 skipped ==========
+========== Elapsed 00:01.212 ==========

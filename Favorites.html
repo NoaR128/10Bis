@@ -1,0 +1,106 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <!--css-->
+    <link href="Favorites.css" rel="stylesheet" />
+    <!--bootstrap-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!--css font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Rubik:wght@300&display=swap" rel="stylesheet">
+    <!--Javascript-->
+    <script src="Restaurant.js"></script>
+    <script>
+        function init() {
+            if (localStorage["bgroup34"] != undefined) {
+                bgroup34 = JSON.parse(localStorage["bgroup34"]);
+            }
+            else {
+                bgroup34 = {
+                    users: {},
+                    currentUser: ""
+                }
+            }
+            currentUser = bgroup34.currentUser;
+            for (k in bgroup34.users[currentUser].resturants)
+            {
+                printF(k);
+            }
+        }
+        function printF(k) {
+            const imageArray = [
+                "image/resturant1.jpg",
+                "image/resturant2.jpg",
+                "image/resturant3.jpg",
+                "image/resturant4.jpg",
+                "image/resturant5.jpg",
+                "image/resturant6.jpg",
+                "image/resturant7.jpg",
+                "image/resturant8.jpg",
+                "image/resturant9.jpg",
+                "image/resturant10.jpg"
+            ];
+
+
+            document.getElementById("ph").innerHTML +=
+                `<div class="col-12 col-lg-6 col-xl-6 d-flex">
+                                                                    <div class="card">
+                                                                    <i class='bx bx-star star-icon' onclick="saveInLocal(${k})"></i>
+                                                                    <img class="card-img-top" src=${getRandomImage(imageArray)} alt="Card image">
+                                                                    <div class="card-body">
+                                                                    <h4 class="card-title">${Restaurants[k]["Restaurant Name"]}</h4>
+                                                                    <p class="card-text">
+                                                                    Address: ${Restaurants[k]["Address"]} <br />
+                                                                    Cuisines:  ${Restaurants[k]["Cuisines"]} <br />
+                                                                    Has Table booking: ${Restaurants[k]["Has Table booking"]} <br />
+                                                                    Has Online delivery: ${Restaurants[k]["Has Online delivery"]} <br />
+                                                                    Aggregate rating: ${Restaurants[k]["Aggregate rating"]} <br />
+                                                                    Rating text: ${Restaurants[k]["Rating text"]} <br />
+                                                                    Average Cost for two: ${Restaurants[k]["Average Cost for two"]} <br />
+                                                                    Price range : ${Restaurants[k]["Price range"]}<br/>
+                                                                    </p>
+                                                                    </div> </div>
+                                                                    </div>`
+        }
+        function getRandomImage(imageArray) {
+            return imageArray[Math.floor(Math.random() * imageArray.length)];
+
+        }
+
+        function movePage() {
+            window.location.replace("10Bis.html");
+        }
+
+
+
+    </script>
+</head>
+<body onload="init()">
+    <div class="container">
+        <div class="header">
+            <img src="image/2.png" />
+        </div>
+        
+            <div class="row">
+                <div class="col-12 col-md-4 col-lg-3" id="style">
+                    <img class="bis_logo" src="image/10bis.png" />
+                    <input type="button" value="back" class="button" onclick="movePage()" />
+                </div>
+                
+             <div class="col-12 col-md-8 col-lg-9">
+                        <div class="row" id="ph"></div>
+                        
+             </div>
+                </div>
+            </div>
+</body>
+</html>

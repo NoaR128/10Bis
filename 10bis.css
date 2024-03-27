@@ -1,0 +1,148 @@
+﻿* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body {
+    width:100%;
+}
+
+/*עיצוב באנר
+*/
+.header {
+    height: 350px;
+    width: 100%;
+    padding-top: 30px;
+}
+
+img {
+    vertical-align: middle;
+}
+
+.img-thumbnail {
+    padding: .25rem;
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    border-radius: .25rem;
+    max-width: 100%;
+    height: 290px;
+    width: 100%;
+}
+
+
+/*עיצוב כרטיסים
+*/
+.card {
+    width: 350px;
+    border: 1.5px solid black;
+    border-radius: 1rem;
+    margin: 10px;
+}
+
+
+    .card:hover{
+        transform: scale(1.1);
+        box-shadow: 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
+    }
+.card-body:hover {
+
+}
+
+
+
+
+
+.col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.col-12 {
+    width: 100%;
+}
+/*עיצוב מלל
+*/
+.card-title {
+    text-align: center;
+    font-family: cursive;
+}
+
+.card-text:last-child {
+    font-family: 'Poppins', sans-serif;
+    font-size: small;
+    text-align: center;
+}
+
+.Cuisines {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    color: #0C7D74
+}
+/*עיצוב תמונות
+*/
+.card-img-top {
+    width: 100%;
+    height: 300px
+}
+
+
+/*עיצוב מסננים*/
+.bis_logo {
+    height: 100px;
+    width: 100px;
+    margin:0 auto;
+    display:flex;
+}
+#filter {
+    border: 1.5px solid black;
+    border-radius: 1rem;
+    padding: 20px;
+}
+#style {
+    font-family: 'Poppins', sans-serif;
+}
+
+#SitTake #PriceRange {
+    width: 200px;
+    height: 80px;
+}
+
+#resturant-choice {
+    width: 200px;
+}
+
+.button {
+    border-radius: 10px;
+    background-color: transparent;
+    border-color: #0C7D74;
+    color: #0C7D74;
+    text-align: center;
+    font-size: 20px;
+    padding: 0px;
+    width: 180px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 10px;
+    box-shadow: 0 10px 15px -8px rgba(0, 0, 0,.7);
+}
+
+    .button:hover {
+        padding-right: 30px;
+    }
+
+.star-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    background-color: #000000;
+    border-radius: 50%;
+    padding: 5px;
+}
+    .star-icon:hover {
+        color: #ffc107;
+    }
+

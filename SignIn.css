@@ -1,0 +1,174 @@
+﻿* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+.signIn {
+    padding:20px;
+}
+
+.background-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+.container {
+    height: 90%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+/*    background-color: gainsboro;
+*/}
+.bis_logo {
+    height:100px;
+    width:100px;
+}
+.form {
+    /*    position: absolute;
+*/ max-width: 500px;
+    max-height: 900px;
+    width: 100%;
+    padding: 0 30px;
+    border-radius: 6px;
+    background-color: white;
+}
+header {
+    padding-top: 20px;
+    font-size: 28px;
+    font-weight: 600;
+    color: #232836;
+    text-align: center;
+}
+
+.form {
+    margin-top: 80px;
+}
+
+    .form .filed {
+        position: relative;
+        height: 50px;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+.filed input,
+.filed button {
+    height: 100%;
+    width: 100%;
+    border: none;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 6px;
+}
+
+.filed input {
+    outline: none;
+    padding: 0 35px;
+    border: 1px solid #CACACA;
+}
+    .filed input:focus {
+        border-bottom-width: 2px;
+    }
+.eye-icon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #8b8b8b;
+    cursor: pointer;
+    padding: 5px;
+}
+.user-icon{
+    position: absolute;
+    top: 50%;
+    right: 350px;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #8b8b8b;
+    cursor: pointer;
+    padding: 5px;
+}
+.key-icon {
+    position: absolute;
+    top: 52%;
+    right: 350px;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #8b8b8b;
+    cursor: pointer;
+    padding: 5px;
+}
+.filed button {
+    color: #fff;
+transition: all 0.3s ease;
+    cursor: pointer;
+    background-color: rgb(0 0 0 / 0%);
+}
+    .filed button:hover {
+
+        animation: ani9 0.4s ease-in-out 
+            infinite alternate;
+    }
+
+
+
+    .form-link {
+        text-align: center;
+        margin-top: 10px;
+    }
+    .form-link span,
+    .form-link a {
+        font-size:14px;
+        font-weight:400;
+        color:#232836;
+    }
+.form a {
+    color: #0171d3;
+    text-decoration:none;
+}
+    .form a:hover {
+        text-decoration:underline;
+    }
+.line {
+    position:relative;
+    height:1px;
+    width:100%;
+    margin:36px 0;
+    background-color:#d4d4d4;
+}
+
+@media screen and (max-width:400px) {
+    .form {
+        padding:15px 10px;
+    }
+}
+
+.button-filed {
+    background-color: rgba(0,0,0,0.4);
+    color: rgba(256,256,256,0.7);
+    border: 0;
+    border-radius: 15px;
+    display: block;
+    margin: 15px auto;
+    padding: 15px 45px;
+    width: 100%;
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+    opacity: 1;
+    visibility: visible;
+    -webkit-transition: all .3s ease
+}
+    .button-filed:hover {
+        transition: all .3s ease;
+        background-color: rgba(0,0,0,0.8);
+    }
